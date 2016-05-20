@@ -1,0 +1,11 @@
+include ../jimbotron/jimbotron
+include ../recent-jobs/recent-jobs
+include ../developers/developers
+include ../footer/footer
+
+mixin index()
+	+jimbotron()
+	//Вывод работ
+	+recent-jobs(getData('jobs'))
+	//Вывод разработчиков
+	+developers(getData('developers'))

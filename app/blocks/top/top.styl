@@ -1,0 +1,84 @@
+
+.top
+	background: #fff
+	position: relative
+	inner()
+
+	&__auth
+		float: right;
+		padding: 10px 0;
+
+	&__menu
+		float: left
+
+.auth
+	&__list
+		display: none
+		
+	&__item
+		float: left
+
+
+	&__link
+		padding: 19.5px 15px;
+		link(#000,colorMain,none)
+
+	&__btn
+		display: block
+		width: 40px
+		height: 40px
+		border:1px solid colorBorder
+		background: transparent
+		border-radius 4px
+
+
+.logo-menu
+	
+	&__logo
+		float: left
+		margin: 0 -15px;
+
+
+	&__nav
+		margin-left:13px
+		float: left
+		display: none
+
+.logo
+	
+	&__link
+		float: left;
+		padding: 19.5px 15px;
+		font-size: 19px;
+		line-height: 21px;
+		link(#000,#000,none)
+		font-weight: 700;
+		text-transform uppercase
+
+
+.menu
+	&__item
+		float: left
+
+	&__link
+		padding: 19.5px 15px;
+		link(#000,colorMain,none)
+
+.drop-menu
+	display: none
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	left: 0;
+	background: #fff;
+	z-index: 3;
+	border-top: 1px solid colorBorder;
+
+	&__item
+		float: left
+		width:100%
+
+	&__link
+		padding: 19.5px 15px;
+		link(#000,colorMain,none)
+		display: block

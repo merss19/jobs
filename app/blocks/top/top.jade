@@ -1,0 +1,24 @@
+mixin top()
+	+b('nav').top.clearfix
+		-var auth = ['Log in','Sign Up']
+		-var menu = ['Jobs','Developers']
+		-var drop = ['Jobs','Developers','Log in','Sign Up']
+		+b.logo-menu.top__menu.clearfix
+			+b.logo.logo-menu__logo
+				+e('a').link(href = "index.html") Ethereum Jobs
+			+b.menu.logo-menu__nav
+				+e('ul').list.clearfix
+					each item in menu
+						+e('li').item
+							+e('a').link=item
+		+b.auth.top__auth
+			+b('button').drop-btn.auth__btn.fa.fa-bars
+				+e('span').item
+			+b('ul').drop-menu.auth-drop.clearfix
+				each item in drop
+					+e('li').item
+						+e('a').link=item
+			+e('ul').list.clearfix
+				each item in auth
+					+e('li').item
+						+e('a').link=item

@@ -1,0 +1,106 @@
+::selection
+	background: transparent
+
+.clearfix:before,
+.clearfix:after
+	display table
+	clear both
+	content ''
+
+*,
+*:before,
+*:after
+	box-sizing: border-box;
+
+h1,h2,h3,h4,p
+	margin 0
+
+img
+	max-width: 100%;
+	height: auto;
+
+
+
+.btn-vidget
+	padding: 6px
+	border-radius: 4px;
+	background: colorMain
+	border none
+
+	&:hover
+		background (darken(colorMain, 20%))
+	
+	&__link
+		color: #fff
+		padding: 0 2px
+
+		&:hover
+			text-decoration: none
+			color: #fff
+
+.btn-main
+	padding:0 10px
+
+	&__link
+		font-size: 18px
+		padding: 10px
+		width: 100%
+		cursor: pointer
+		color: #fff
+		text-align: center
+		background: colorMain
+		display: block
+		margin-bottom:10px
+
+		&:hover
+			text-decoration: none
+			color: #fff
+			background (darken(colorMain, 20%))
+
+.btn-create
+	background: colorSecond
+	&:hover
+		background (darken(colorSecond, 20%))
+
+.label
+	display: inline-block;
+	background: colorLabel
+	color: #fff;
+	font-size: 12px;
+	padding: 2px 7px;
+	margin-left: 3px;
+	font-weight: bold;
+
+	&:before
+		margin-right:2px
+	
+	&-remote
+		background: colorSecond
+
+.header-name
+	font-size: 32px
+	line-height: 53px;
+	font-family: Bold
+	font-weight: 700;
+	color: #000
+	margin-top: 10px;
+
+.label-hire
+	color: #fff
+	background: colorMain
+	padding: 5px
+	font-weight: bold
+	font-size:12px
+
+	&:before
+		margin-right: 4px
+
+i
+	&:before
+		margin-right: 4px
+
+
+.hide
+	display: none
+.show
+	display: block
